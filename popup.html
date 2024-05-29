@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bilibili Feed Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      height: 400px;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .item {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #refreshButton {
+      width: 100%;
+      padding: 10px;
+      background-color: #00a1d6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #refreshButton:hover {
+      background-color: #008ecf;
+    }
+
+    .scrollable-div {
+      width: 100%;
+      height: 340px;
+      overflow: auto;
+      margin-top: 10px;
+    }
+
+    .watch-later-button {
+      width: 50px;
+      padding: 5px;
+      background-color: white;
+      border: none;
+      color: #9ddef4;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="refreshButton" type="button">刷新</button>
+  <div id="feed" class="scrollable-div"></div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

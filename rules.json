@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "modifyHeaders",
+        "requestHeaders": [
+          { "header": "Origin", "operation": "set", "value": "https://t.bilibili.com" },
+          { "header": "Referer", "operation": "set", "value": "https://t.bilibili.com/?spm_id_from=333.1007.0.0" },
+          { "header": "Sec-Fetch-Site", "operation": "set", "value": "same-site" }
+        ]
+      },
+      "condition": {
+        "urlFilter": "https://api.bilibili.com/x/v2/history/toview/add"
+      }
+    }
+]
