@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili动态",
+  "version": "1.0",
+  "description": "展示 B站 动态信息",
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "storage",
+    "background",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "https://api.bilibili.com/*",
+    "https://t.bilibili.com/*"
+  ],
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+		"rule_resources": [{
+			"id": "ruleset_1",
+			"enabled": true,
+			"path": "rules.json"
+		}]
+	},
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
