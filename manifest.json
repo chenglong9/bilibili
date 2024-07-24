@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Bilibili动态",
+  "name": "动态刷新助手",
   "version": "1.0",
   "description": "展示 B站 动态信息",
   "permissions": [
